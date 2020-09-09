@@ -226,6 +226,12 @@ body {
   letter-spacing: 0.4rem;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .heading--primary {
+    font-size: 2rem;
+  }
+}
+
 .heading--secondary {
   position: absolute;
   left: 50%;
@@ -413,6 +419,64 @@ body {
   outline: 1rem solid #fca311;
   -webkit-box-shadow: 0.5rem 1rem 0.5rem rgba(20, 33, 61, 0.7);
           box-shadow: 0.5rem 1rem 0.5rem rgba(20, 33, 61, 0.7);
+}
+
+.message {
+  height: auto;
+  background-color: rgba(252, 163, 17, 0.75);
+  padding: 7rem 4rem;
+  position: relative;
+}
+
+.message__div {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .message__div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.message__content {
+  font-size: 1.4rem;
+  width: 50%;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 43.75em) {
+  .message__content {
+    width: 75%;
+    margin: 2rem 0;
+  }
+}
+
+.message__tagline {
+  display: block;
+  font-style: italic;
+}
+
+.message__photo {
+  height: 30rem;
+  border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .message__photo {
+    height: 20rem;
+  }
 }
 
 .aim {
@@ -770,12 +834,25 @@ body {
   color: #14213d;
 }
 
+.team__member--name {
+  display: inline-block;
+  color: #777;
+}
+
 .team__sub-member {
   font-size: 1.4rem;
   padding: 0.5rem 1rem;
   display: block;
   margin-left: 3.5rem;
   color: #fca311;
+}
+
+.team__button {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .footer {

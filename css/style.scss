@@ -300,6 +300,10 @@ body {
   font-size: 2.4rem;
   color: rgba($color-blue, 0.85);
   letter-spacing: 0.4rem;
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
 }
 
 // BACKGROUND HEADING
@@ -422,6 +426,49 @@ body {
       z-index: 20;
       outline: 1rem solid $color-yellow;
       box-shadow: 0.5rem 1rem 0.5rem rgba($color-blue, 0.7);
+    }
+  }
+}
+
+.message {
+  height: auto;
+  background-color: rgba($color-yellow, 0.75);
+  padding: 7rem 4rem;
+  position: relative;
+
+  &__div {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include respond(s-hundred) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    font-size: 1.4rem;
+    width: 50%;
+    font-weight: 700;
+
+    @include respond(s-hundred) {
+      width: 75%;
+      margin: 2rem 0;
+    }
+  }
+
+  &__tagline {
+    display: block;
+    font-style: italic;
+  }
+
+  &__photo {
+    height: 30rem;
+    border-radius: 0.5rem;
+
+    @include respond(f-hundred) {
+      height: 20rem;
     }
   }
 }
@@ -656,6 +703,11 @@ body {
     display: block;
     font-weight: 700;
     color: $color-blue;
+
+    &--name {
+      display: inline-block;
+      color: $color-gray;
+    }
   }
 
   &__sub-member {
@@ -664,6 +716,13 @@ body {
     display: block;
     margin-left: 3.5rem;
     color: $color-yellow;
+  }
+
+  &__button {
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translate(-50%);
   }
 }
 
