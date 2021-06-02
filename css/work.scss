@@ -73,7 +73,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  background-color: #352e3150;
+  background-color: rgba(#F4A261,0.5);
   display: flex;
 }
 
@@ -84,7 +84,7 @@ body {
   transform: translate(-50%);
   text-decoration: none;
   font-size: 1.4rem;
-  color: #323232;
+  color: #2A9D8F;
 }
 
 // HEADING
@@ -97,7 +97,7 @@ body {
 // PRIMARY HEADING
 .heading--primary {
   font-size: 2.4rem;
-  color: rgba(#323232, 0.85);
+  color: rgba(#2A9D8F, 0.85);
   letter-spacing: 0.4rem;
 }
 
@@ -108,7 +108,7 @@ body {
   top: 10%;
   transform: translate(-50%);
   font-size: 6.4rem;
-  color: rgba(#323232, 0.1);
+  color: rgba(#2A9D8F, 0.1);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -139,7 +139,10 @@ body {
   grid-template-areas:
     "img-1 img-2 img-3 img-3"
     "img-1 img-4 img-5 img-6"
-    "img-7 img-7 img-8 img-6";
+    "img-7 img-7 img-8 img-6"
+    "img-9 img-9 img-10 img-11"
+    "img-9 img-9 img-12 img-13"
+    "img-14 img-14 img-15 img-15";
 
   @include respond(tab-port) {
     grid-template-areas:
@@ -147,7 +150,12 @@ body {
       "img-1 img-1 img-3 img-3"
       "img-4 img-4 img-5 img-5"
       "img-6 img-7 img-7 img-7"
-      "img-8 img-8 img-8 img-8";
+      "img-8 img-8 img-8 img-8"
+      "img-9 img-9 img-9 img-9"
+      "img-10 img-10 img-11 img-11"
+      "img-12 img-12 img-13 img-13"
+      "img-14 img-14 img-14 img-14"
+      "img-15 img-15 img-15 img-15";
   }
 
   @include respond(phone) {
@@ -159,7 +167,14 @@ body {
       "img-5 img-5 img-5 img-5"
       "img-6 img-6 img-6 img-6"
       "img-7 img-7 img-7 img-7"
-      "img-8 img-8 img-8 img-8";
+      "img-8 img-8 img-8 img-8"
+      "img-9 img-9 img-9 img-9"
+      "img-10 img-10 img-10 img-10"
+      "img-11 img-11 img-11 img-11"
+      "img-12 img-12 img-12 img-12"
+      "img-13 img-13 img-13 img-13"
+      "img-14 img-14 img-14 img-14"
+      "img-15 img-15 img-15 img-15";
   }
 }
 
@@ -216,7 +231,7 @@ body {
 .img-1 {
   grid-area: img-1;
   min-height: 51.5rem;
-  background-image: url("../img/project\ \(1\).jpeg");
+  background-image: url("../img/work\ \(10\).jpeg");
 
   @include respond(tab-port) {
     min-height: 41.5rem;
@@ -230,7 +245,7 @@ body {
 
 .img-2 {
   grid-area: img-2;
-  background-image: url("../img/project\ \(2\).jpeg");
+  background-image: url("../img/work\ \(7\).jpeg");
 
   @include respond(phone) {
     margin-bottom: 3rem;
@@ -239,7 +254,7 @@ body {
 
 .img-3 {
   grid-area: img-3;
-  background-image: url("../img/project\ \(3\).jpeg");
+  background-image: url("../img/work\ \(11\).jpeg");
   @include respond(phone) {
     margin-bottom: 3rem;
   }
@@ -247,7 +262,7 @@ body {
 
 .img-4 {
   grid-area: img-4;
-  background-image: url("../img/about-1.jpg");
+  background-image: url("../img/work\ \(1\).jpeg");
   @include respond(phone) {
     margin-bottom: 3rem;
   }
@@ -255,7 +270,7 @@ body {
 
 .img-5 {
   grid-area: img-5;
-  background-image: url("../img/about-2.jpg");
+  background-image: url("../img/work\ \(2\).jpeg");
   @include respond(phone) {
     margin-bottom: 3rem;
   }
@@ -264,7 +279,7 @@ body {
 .img-6 {
   grid-area: img-6;
   min-height: 51.5rem;
-  background-image: url("../img/about-3.jpg");
+  background-image: url("../img/work\ \(3\).jpeg");
 
   @include respond(tab-port) {
     min-height: 20rem;
@@ -278,7 +293,7 @@ body {
 
 .img-7 {
   grid-area: img-7;
-  background-image: url("../img/about-4.jpeg");
+  background-image: url("../img/work\ \(8\).jpeg");
   @include respond(phone) {
     margin-bottom: 3rem;
   }
@@ -286,7 +301,64 @@ body {
 
 .img-8 {
   grid-area: img-8;
-  background-image: url("../img/about-5.jpeg");
+  background-image: url("../img/work\ \(5\).jpeg");
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-9 {
+  grid-area: img-9;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(4\).jpeg");
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-10 {
+  grid-area: img-10;
+  background-image: url("../img/work\ \(6\).jpeg");
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-11 {
+  grid-area: img-11;
+  background-image: url("../img/work\ \(9\).jpeg");
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-12 {
+  grid-area: img-12;
+  background-image: url("../img/work\ \(18\).jpeg");
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-13 {
+  grid-area: img-13;
+  background-image: url("../img/work\ \(19\).jpeg");
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-14 {
+  grid-area: img-14;
+  background-image: url("../img/work\ \(13\).jpeg");
+  @include respond(phone) {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-15 {
+  grid-area: img-15;
+  background-image: url("../img/work\ \(14\).jpeg");
   @include respond(phone) {
     margin-bottom: 3rem;
   }
@@ -305,3 +377,5 @@ body {
     border-radius: 0.5rem;
   }
 }
+
+

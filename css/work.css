@@ -34,7 +34,7 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  background-color: #352e3150;
+  background-color: rgba(244, 162, 97, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,7 @@ body {
           transform: translate(-50%);
   text-decoration: none;
   font-size: 1.4rem;
-  color: #323232;
+  color: #2A9D8F;
 }
 
 .heading {
@@ -59,7 +59,7 @@ body {
 
 .heading--primary {
   font-size: 2.4rem;
-  color: rgba(50, 50, 50, 0.85);
+  color: rgba(42, 157, 143, 0.85);
   letter-spacing: 0.4rem;
 }
 
@@ -70,7 +70,7 @@ body {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   font-size: 6.4rem;
-  color: rgba(50, 50, 50, 0.1);
+  color: rgba(42, 157, 143, 0.1);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -105,18 +105,18 @@ body {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 1.5rem;
-      grid-template-areas: "img-1 img-2 img-3 img-3" "img-1 img-4 img-5 img-6" "img-7 img-7 img-8 img-6";
+      grid-template-areas: "img-1 img-2 img-3 img-3" "img-1 img-4 img-5 img-6" "img-7 img-7 img-8 img-6" "img-9 img-9 img-10 img-11" "img-9 img-9 img-12 img-13" "img-14 img-14 img-15 img-15";
 }
 
 @media only screen and (max-width: 56.25em) {
   .image-gallery {
-        grid-template-areas: "img-1 img-1 img-2 img-2" "img-1 img-1 img-3 img-3" "img-4 img-4 img-5 img-5" "img-6 img-7 img-7 img-7" "img-8 img-8 img-8 img-8";
+        grid-template-areas: "img-1 img-1 img-2 img-2" "img-1 img-1 img-3 img-3" "img-4 img-4 img-5 img-5" "img-6 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-11 img-11" "img-12 img-12 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15";
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .image-gallery {
-        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8";
+        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12" "img-13 img-13 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15";
   }
 }
 
@@ -188,7 +188,7 @@ body {
   -ms-grid-column: 1;
   grid-area: img-1;
   min-height: 51.5rem;
-  background-image: url("../img/project (1).jpeg");
+  background-image: url("../img/work (10).jpeg");
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -208,7 +208,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: img-2;
-  background-image: url("../img/project (2).jpeg");
+  background-image: url("../img/work (7).jpeg");
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -222,7 +222,7 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-area: img-3;
-  background-image: url("../img/project (3).jpeg");
+  background-image: url("../img/work (11).jpeg");
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -235,7 +235,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: img-4;
-  background-image: url("../img/about-1.jpg");
+  background-image: url("../img/work (1).jpeg");
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -248,7 +248,7 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: img-5;
-  background-image: url("../img/about-2.jpg");
+  background-image: url("../img/work (2).jpeg");
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -263,7 +263,7 @@ body {
   -ms-grid-column: 4;
   grid-area: img-6;
   min-height: 51.5rem;
-  background-image: url("../img/about-3.jpg");
+  background-image: url("../img/work (3).jpeg");
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -284,7 +284,7 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: img-7;
-  background-image: url("../img/about-4.jpeg");
+  background-image: url("../img/work (8).jpeg");
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -297,11 +297,107 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: img-8;
-  background-image: url("../img/about-5.jpeg");
+  background-image: url("../img/work (5).jpeg");
 }
 
 @media only screen and (max-width: 37.5em) {
   .img-8 {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-9 {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img-9;
+  min-height: 51.5rem;
+  background-image: url("../img/work (4).jpeg");
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-9 {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-10 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: img-10;
+  background-image: url("../img/work (6).jpeg");
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-10 {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-11 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: img-11;
+  background-image: url("../img/work (9).jpeg");
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-11 {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-12 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: img-12;
+  background-image: url("../img/work (18).jpeg");
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-12 {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-13 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: img-13;
+  background-image: url("../img/work (19).jpeg");
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-13 {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-14 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: img-14;
+  background-image: url("../img/work (13).jpeg");
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-14 {
+    margin-bottom: 3rem;
+  }
+}
+
+.img-15 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: img-15;
+  background-image: url("../img/work (14).jpeg");
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-15 {
     margin-bottom: 3rem;
   }
 }
