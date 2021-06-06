@@ -105,18 +105,18 @@ body {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 1.5rem;
-      grid-template-areas: "img-1 img-2 img-3 img-3" "img-1 img-4 img-5 img-6" "img-7 img-7 img-8 img-6" "img-9 img-9 img-10 img-11" "img-9 img-9 img-12 img-13" "img-14 img-14 img-15 img-15";
+      grid-template-areas: "img-1 img-2 img-3 img-3" "img-1 img-4 img-5 img-6" "img-7 img-7 img-8 img-6" "img-9 img-9 img-10 img-11" "img-9 img-9 img-12 img-13" "img-14 img-14 img-15 img-15" "img-16 img-17 img-18 img-19" "img-16 img-17 img-18 img-19";
 }
 
 @media only screen and (max-width: 56.25em) {
   .image-gallery {
-        grid-template-areas: "img-1 img-1 img-2 img-2" "img-1 img-1 img-3 img-3" "img-4 img-4 img-5 img-5" "img-6 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-11 img-11" "img-12 img-12 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15";
+        grid-template-areas: "img-1 img-1 img-2 img-2" "img-1 img-1 img-3 img-3" "img-4 img-4 img-5 img-5" "img-6 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-11 img-11" "img-12 img-12 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15" "img-16 img-16 img-18 img-18" "img-16 img-16 img-18 img-18" "img-17 img-17 img-19 img-19" "img-17 img-17 img-19 img-19";
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .image-gallery {
-        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12" "img-13 img-13 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15";
+        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12" "img-13 img-13 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15" "img-16 img-16 img-16 img-16" "img-17 img-17 img-17 img-17" "img-18 img-18 img-18 img-18" "img-19 img-19 img-19 img-19";
   }
 }
 
@@ -402,8 +402,100 @@ body {
   }
 }
 
-.team__page {
-  padding: 8rem;
+.img-16 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img-16;
+  min-height: 51.5rem;
+  background-image: url("../img/work (15).jpeg");
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-16 {
+    min-height: 41.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-16 {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-17 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: img-17;
+  min-height: 51.5rem;
+  background-image: url("../img/work (17).jpeg");
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-17 {
+    min-height: 41.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-17 {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-18 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: img-18;
+  min-height: 51.5rem;
+  background-image: url("../img/work (20).jpeg");
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-18 {
+    min-height: 41.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-18 {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-19 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: img-19;
+  min-height: 51.5rem;
+  background-image: url("../img/work (21).jpeg");
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-19 {
+    min-height: 41.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-19 {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.team {
+  margin: 5rem;
+  padding: 2.5rem;
+}
+
+.team__div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,13 +505,32 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 2.5rem 0;
 }
 
-.team__page__photo {
-  height: 35rem;
-  margin-bottom: 2.5rem;
-  border-radius: 0.5rem;
+.team__div--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.team__message {
+  font-size: 1.4rem;
+  word-spacing: 2.5px;
+  color: #264653;
+  font-weight: 700;
+}
+
+.team__name {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: #2a9d8f;
+}
+
+.team__img {
+  height: 25rem;
+  margin: 0 2rem;
+  outline: #e76f51 solid 6px;
 }
 /*# sourceMappingURL=work.css.map */

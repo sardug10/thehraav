@@ -142,7 +142,9 @@ body {
     "img-7 img-7 img-8 img-6"
     "img-9 img-9 img-10 img-11"
     "img-9 img-9 img-12 img-13"
-    "img-14 img-14 img-15 img-15";
+    "img-14 img-14 img-15 img-15"
+    "img-16 img-17 img-18 img-19"
+    "img-16 img-17 img-18 img-19";
 
   @include respond(tab-port) {
     grid-template-areas:
@@ -155,7 +157,11 @@ body {
       "img-10 img-10 img-11 img-11"
       "img-12 img-12 img-13 img-13"
       "img-14 img-14 img-14 img-14"
-      "img-15 img-15 img-15 img-15";
+      "img-15 img-15 img-15 img-15"
+      "img-16 img-16 img-18 img-18"
+      "img-16 img-16 img-18 img-18"
+      "img-17 img-17 img-19 img-19"
+      "img-17 img-17 img-19 img-19";
   }
 
   @include respond(phone) {
@@ -174,7 +180,11 @@ body {
       "img-12 img-12 img-12 img-12"
       "img-13 img-13 img-13 img-13"
       "img-14 img-14 img-14 img-14"
-      "img-15 img-15 img-15 img-15";
+      "img-15 img-15 img-15 img-15"
+      "img-16 img-16 img-16 img-16"
+      "img-17 img-17 img-17 img-17"
+      "img-18 img-18 img-18 img-18"
+      "img-19 img-19 img-19 img-19";
   }
 }
 
@@ -364,18 +374,97 @@ body {
   }
 }
 
-.team__page {
-  padding: 8rem;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+.img-16 {
+  grid-area: img-16;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(15\).jpeg");
 
-  &__photo {
-    height: 35rem;
-    margin-bottom: 2.5rem;
-    border-radius: 0.5rem;
+  @include respond(tab-port) {
+    min-height: 41.5rem;
+  }
+
+  @include respond(phone) {
+    min-height: 30rem;
+    margin-bottom: 3rem;
   }
 }
 
+.img-17 {
+  grid-area: img-17;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(17\).jpeg");
 
+  @include respond(tab-port) {
+    min-height: 41.5rem;
+  }
+
+  @include respond(phone) {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-18 {
+  grid-area: img-18;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(20\).jpeg");
+
+  @include respond(tab-port) {
+    min-height: 41.5rem;
+  }
+
+  @include respond(phone) {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-19 {
+  grid-area: img-19;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(21\).jpeg");
+
+  @include respond(tab-port) {
+    min-height: 41.5rem;
+  }
+
+  @include respond(phone) {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.team{
+  margin: 5rem;
+  padding: 2.5rem;
+
+  &__div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2.5rem 0;
+
+    &--reverse{
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__message{
+    font-size: 1.4rem;
+    word-spacing: 2.5px;
+    color: #264653;
+    font-weight: 700;
+  }
+
+  &__name{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: #2a9d8f;
+  }
+
+  &__img{
+    height: 25rem;
+    margin:0 2rem;
+    outline: #e76f51 solid 6px;
+  }
+}

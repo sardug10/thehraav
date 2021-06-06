@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == f-hundred {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    } //500px
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+
+  @if $breakpoint == e-hundred {
+    @media only screen and (max-width: 50em) {
+      @content;
+    } //800px
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint == thousand {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    } //1000px
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800
+  }
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12, 12/16
+  }
+}
+
+body{
+    background-color: rgba(#2a9d8f, 0.2);
+}
+
+.blog{
+    position: relative;
+    &__back{
+        display: inline-block;
+        margin: 3.5rem;
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: #f4a261;
+        font-weight: bolder;
+    }
+
+    &__blog{
+        position: absolute;
+        text-align: center;
+        font-size: 30rem;
+        font-weight: 400;
+        color: rgba(#2a9d8f,.5);
+        opacity: .2;
+        top: -5%;
+        left: 50%;
+        transform: translate(-50%);
+
+        @include respond(phone){
+            display: none;
+        }
+    }
+
+    &__div{
+        margin: 2.5rem 0;
+        padding: 2rem;
+    }
+
+    &__heading{
+        font-size: 2.8rem;
+        color: #f72585;
+        margin: 2rem 0;
+
+        &--small{
+            margin: 1rem 0;
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__para{
+        font-size: 1.6rem;
+        word-spacing: 2px;
+        color: #264653;
+        margin-left: 2rem;
+    
+        &::first-letter{
+          font-size: 2rem;
+        }
+    }
+}

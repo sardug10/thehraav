@@ -650,6 +650,39 @@ body {
   }
 }
 
+.blog{
+  height: auto;
+  padding: 10rem 3rem;
+  position: relative;
+  background-color: rgba(#2a9d8f, 0.2);
+
+  &__div{
+    margin: 2.5rem 0;
+    padding: 2rem;
+  }
+
+  &__para{
+    font-size: 1.6rem;
+    word-spacing: 2px;
+    color: #264653;
+
+    &::first-letter{
+      font-size: 3.4rem;
+    }
+  }
+
+  &__link{
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #264653;
+    padding: .5rem 1.2rem;
+    background-color: #F4A261;
+  }
+}
+
 //Team
 .team {
   height: auto;
