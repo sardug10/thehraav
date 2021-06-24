@@ -144,7 +144,9 @@ body {
     "img-9 img-9 img-12 img-13"
     "img-14 img-14 img-15 img-15"
     "img-16 img-17 img-18 img-19"
-    "img-16 img-17 img-18 img-19";
+    "img-16 img-17 img-18 img-19"
+    "img-20 img-21 img-22 img-23"
+    "img-20 img-21 img-22 img-23";
 
   @include respond(tab-port) {
     grid-template-areas:
@@ -161,7 +163,11 @@ body {
       "img-16 img-16 img-18 img-18"
       "img-16 img-16 img-18 img-18"
       "img-17 img-17 img-19 img-19"
-      "img-17 img-17 img-19 img-19";
+      "img-17 img-17 img-19 img-19"
+      "img-20 img-20 img-21 img-21"
+      "img-20 img-20 img-21 img-21"
+      "img-22 img-22 img-23 img-23"
+      "img-22 img-22 img-23 img-23";
   }
 
   @include respond(phone) {
@@ -184,7 +190,11 @@ body {
       "img-16 img-16 img-16 img-16"
       "img-17 img-17 img-17 img-17"
       "img-18 img-18 img-18 img-18"
-      "img-19 img-19 img-19 img-19";
+      "img-19 img-19 img-19 img-19"
+      "img-20 img-20 img-20 img-20"
+      "img-21 img-21 img-21 img-21"
+      "img-22 img-22 img-22 img-22"
+      "img-23 img-23 img-23 img-23";
   }
 }
 
@@ -423,6 +433,66 @@ body {
   grid-area: img-19;
   min-height: 51.5rem;
   background-image: url("../img/work\ \(21\).jpeg");
+
+  @include respond(tab-port) {
+    min-height: 41.5rem;
+  }
+
+  @include respond(phone) {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-20 {
+  grid-area: img-20;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(22\).jpeg");
+
+  @include respond(tab-port) {
+    min-height: 41.5rem;
+  }
+
+  @include respond(phone) {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-21 {
+  grid-area: img-21;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(23\).jpeg");
+
+  @include respond(tab-port) {
+    min-height: 41.5rem;
+  }
+
+  @include respond(phone) {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-22 {
+  grid-area: img-22;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(25\).jpeg");
+
+  @include respond(tab-port) {
+    min-height: 41.5rem;
+  }
+
+  @include respond(phone) {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-23 {
+  grid-area: img-23;
+  min-height: 51.5rem;
+  background-image: url("../img/work\ \(26\).jpeg");
 
   @include respond(tab-port) {
     min-height: 41.5rem;

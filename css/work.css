@@ -105,18 +105,18 @@ body {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-gap: 1.5rem;
-      grid-template-areas: "img-1 img-2 img-3 img-3" "img-1 img-4 img-5 img-6" "img-7 img-7 img-8 img-6" "img-9 img-9 img-10 img-11" "img-9 img-9 img-12 img-13" "img-14 img-14 img-15 img-15" "img-16 img-17 img-18 img-19" "img-16 img-17 img-18 img-19";
+      grid-template-areas: "img-1 img-2 img-3 img-3" "img-1 img-4 img-5 img-6" "img-7 img-7 img-8 img-6" "img-9 img-9 img-10 img-11" "img-9 img-9 img-12 img-13" "img-14 img-14 img-15 img-15" "img-16 img-17 img-18 img-19" "img-16 img-17 img-18 img-19" "img-20 img-21 img-22 img-23" "img-20 img-21 img-22 img-23";
 }
 
 @media only screen and (max-width: 56.25em) {
   .image-gallery {
-        grid-template-areas: "img-1 img-1 img-2 img-2" "img-1 img-1 img-3 img-3" "img-4 img-4 img-5 img-5" "img-6 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-11 img-11" "img-12 img-12 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15" "img-16 img-16 img-18 img-18" "img-16 img-16 img-18 img-18" "img-17 img-17 img-19 img-19" "img-17 img-17 img-19 img-19";
+        grid-template-areas: "img-1 img-1 img-2 img-2" "img-1 img-1 img-3 img-3" "img-4 img-4 img-5 img-5" "img-6 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-11 img-11" "img-12 img-12 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15" "img-16 img-16 img-18 img-18" "img-16 img-16 img-18 img-18" "img-17 img-17 img-19 img-19" "img-17 img-17 img-19 img-19" "img-20 img-20 img-21 img-21" "img-20 img-20 img-21 img-21" "img-22 img-22 img-23 img-23" "img-22 img-22 img-23 img-23";
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   .image-gallery {
-        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12" "img-13 img-13 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15" "img-16 img-16 img-16 img-16" "img-17 img-17 img-17 img-17" "img-18 img-18 img-18 img-18" "img-19 img-19 img-19 img-19";
+        grid-template-areas: "img-1 img-1 img-1 img-1" "img-2 img-2 img-2 img-2" "img-3 img-3 img-3 img-3" "img-4 img-4 img-4 img-4" "img-5 img-5 img-5 img-5" "img-6 img-6 img-6 img-6" "img-7 img-7 img-7 img-7" "img-8 img-8 img-8 img-8" "img-9 img-9 img-9 img-9" "img-10 img-10 img-10 img-10" "img-11 img-11 img-11 img-11" "img-12 img-12 img-12 img-12" "img-13 img-13 img-13 img-13" "img-14 img-14 img-14 img-14" "img-15 img-15 img-15 img-15" "img-16 img-16 img-16 img-16" "img-17 img-17 img-17 img-17" "img-18 img-18 img-18 img-18" "img-19 img-19 img-19 img-19" "img-20 img-20 img-20 img-20" "img-21 img-21 img-21 img-21" "img-22 img-22 img-22 img-22" "img-23 img-23 img-23 img-23";
   }
 }
 
@@ -485,6 +485,94 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .img-19 {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-20 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: img-20;
+  min-height: 51.5rem;
+  background-image: url("../img/work (22).jpeg");
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-20 {
+    min-height: 41.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-20 {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-21 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: img-21;
+  min-height: 51.5rem;
+  background-image: url("../img/work (23).jpeg");
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-21 {
+    min-height: 41.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-21 {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-22 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: img-22;
+  min-height: 51.5rem;
+  background-image: url("../img/work (25).jpeg");
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-22 {
+    min-height: 41.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-22 {
+    min-height: 30rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.img-23 {
+  -ms-grid-row: 9;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: img-23;
+  min-height: 51.5rem;
+  background-image: url("../img/work (26).jpeg");
+}
+
+@media only screen and (max-width: 56.25em) {
+  .img-23 {
+    min-height: 41.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .img-23 {
     min-height: 30rem;
     margin-bottom: 3rem;
   }
